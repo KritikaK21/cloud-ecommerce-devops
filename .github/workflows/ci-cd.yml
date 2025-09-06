@@ -27,24 +27,3 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ecommerce-app:latest
-
-  deployments-tests:
-    runs-on: ubuntu-latest
-    needs: build-and-push   # Run only after build-and-push succeeds
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Run Deployment Tests
-        run: |
-          echo "Add your deployment test commands here"
-
-  complete-demo-sync-check:
-    runs-on: ubuntu-latest
-    needs: build-and-push   # Run only after build-and-push succeeds
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Complete Demo Sync Check
-        run: echo "Demo sync check completed!"
