@@ -1,4 +1,4 @@
-name: CI - Build and Push Docker Image
+name: CI/CD Demo
 
 on:
   push:
@@ -6,25 +6,14 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  build-test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+      - name: Build Docker image (simulated)
+        run: echo "Building Docker image ecommerce-app:latest"
 
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ecommerce-app:latest
+      - name: Run Docker container (simulated)
+        run: echo "Running Docker container ecommerce-app:latest"
