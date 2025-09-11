@@ -32,19 +32,24 @@ This project mimics real-world cloud application scenarios and demonstrates **en
   *GitHub Actions configured for automated build, test, and deployment*  
 
 - **Monitoring & Logging**  
-  *Prometheus + Grafana dashboards to visualize metrics and logs in real-time*  
+  *Prometheus + Grafana dashboards to visualize metrics and logs in real-time*
 
-- **Screenshots Proof** *(see below)*  
+## 🔥 Highlights / Impact
 
----
+- Automated infrastructure provisioning with Terraform
+*Reduced manual setup time by ~60%*
 
-## 📌 Work in Progress
+- Microservices deployed and orchestrated with Docker
+*Each service can be deployed independently in under 2 minutes*
 
-- ⏳ Security enhancements (IAM, secrets management)  
-- ⏳ Auto-scaling policies for high traffic  
-- ⏳ Live deployment demo  
+- CI/CD pipeline with GitHub Actions
+*Deployment frequency increased by 80%, reducing manual errors*
 
----
+- Monitoring & Logging with Prometheus + Grafana
+*Real-time metrics allow detection of issues within 30 seconds*
+
+- Screenshots provide proof of implementation
+*Demonstrates working app, monitoring dashboards, and CI/CD pipeline*
 
 ## 🏗️ Project Architecture
 
@@ -58,6 +63,14 @@ This project follows a **microservices-based architecture**:
 ![Project Architecture](images/architecture.png)
 
 ---
+
+## 👩‍💻 Tech Stack
+
+- Cloud: Azure
+- DevOps Tools: Terraform, Docker, GitHub Actions, Prometheus, Grafana
+- Languages/Frameworks: Java, Spring Boot, Node.js
+
+- **Screenshots Proof** *(see below)*  
 
 ## 📸 Project Screenshots
 
@@ -95,7 +108,6 @@ This project follows a **microservices-based architecture**:
 <img src="images/cicd_pipeline.png" alt="CI/CD Pipeline Demo" width="500"/>
 <p align="center"><em>CI/CD Pipeline Demo Completed</em></p>
 
-
 ## 🚀 How to Run
 
 1. **Clone this repository:**  
@@ -114,11 +126,42 @@ terraform apply
 docker-compose up --build
 ```
 
-## 👩‍💻 Tech Stack
+## 🚀 Usage
 
-- Cloud: Azure
-- DevOps Tools: Terraform, Docker, GitHub Actions, Prometheus, Grafana
-- Languages/Frameworks: Java, Spring Boot, Node.js
+After running:
+
+```bash
+docker compose up
+```
+You can access the services locally at:
+
+- 🖥 Frontend (UI): http://localhost:8080
+
+- ⚙️ Backend (API): http://localhost:5000
+
+- 📊 Grafana (Monitoring): http://localhost:3000
+
+- 🗄 Database (MySQL): Internal on port 3306 (accessible by backend service)
+
+To stop the project:
+```bash
+docker compose down
+```
+
+## 🌍 Live Demo
+
+- A live deployment of this project will be available soon.
+👉 Stay tuned! (Link will be added here once deployed)
+
+---
+
+## 📌 Work in Progress
+
+- ⏳ Security enhancements (IAM, secrets management)  
+- ⏳ Auto-scaling policies for high traffic  
+- ⏳ Live deployment demo  
+
+---
 
 ## 📂 Repository Structure
 ```bash
@@ -129,19 +172,6 @@ cloud-ecommerce-devops/
 │── Dockerfile              # Docker setup
 │── README.md               # Documentation
 ```
-## 🔥 Highlights / Impact
 
-- Automated infrastructure provisioning with Terraform
-*Reduced manual setup time by ~60%*
 
-- Microservices deployed and orchestrated with Docker
-*Each service can be deployed independently in under 2 minutes*
 
-- CI/CD pipeline with GitHub Actions
-*Deployment frequency increased by 80%, reducing manual errors*
-
-- Monitoring & Logging with Prometheus + Grafana
-*Real-time metrics allow detection of issues within 30 seconds*
-
-- Screenshots provide proof of implementation
-*Demonstrates working app, monitoring dashboards, and CI/CD pipeline*
