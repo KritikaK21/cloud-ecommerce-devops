@@ -63,40 +63,38 @@ This project follows a **microservices-based architecture**:
 
 ### 🌐 Web / App Screenshots
 
-**Welcome to Nginx**
-![Nginx Welcome Page](images/image1.png)
+<img src="images/nginx_welcome.png" alt="Nginx Welcome Page" width="500"/>
+<p align="center"><em>Nginx Welcome Page</em></p>
 
-**WeaveSocks UI**
-![WeaveSocks UI](images/image2.png)
+<img src="images/weavesocks_ui.png" alt="WeaveSocks UI" width="500"/>
+<p align="center"><em>WeaveSocks UI</em></p>
 
 ---
 
 ### 📊 Grafana / Monitoring
 
-**Grafana / Prometheus Query Setup**
-![Prometheus / Grafana Query](images/image3.png)
+<img src="images/grafana_query.png" alt="Grafana Query Setup" width="500"/>
+<p align="center"><em>Grafana / Prometheus Query Setup</em></p>
 
-**Grafana Login Page**
-![Grafana Login](images/image4.png)
+<img src="images/grafana_login.png" alt="Grafana Login Page" width="500"/>
+<p align="center"><em>Grafana Login Page</em></p>
 
-**Grafana Dashboard - Overview**
-![Grafana Dashboard Overview](images/image5.png)
+<img src="images/grafana_dashboard_overview.png" alt="Grafana Dashboard Overview" width="500"/>
+<p align="center"><em>Grafana Dashboard Overview</em></p>
 
-**Grafana Dashboard - Node Exporter**
-![Grafana Node Exporter](images/image6.png)
+<img src="images/grafana_node_exporter.png" alt="Grafana Node Exporter" width="500"/>
+<p align="center"><em>Grafana Node Exporter Dashboard</em></p>
 
 ---
 
 ### 💻 Code / CI-CD
 
-**Go Module Stats**
-![Go Module Info](images/image8.png)
+<img src="images/go_module_stats.png" alt="Go Module Stats" width="500"/>
+<p align="center"><em>Go Module Stats / Code Info</em></p>
 
-**CI/CD Pipeline Demo**
-![CI/CD Pipeline](images/image9.png)
+<img src="images/cicd_pipeline.png" alt="CI/CD Pipeline Demo" width="500"/>
+<p align="center"><em>CI/CD Pipeline Demo Completed</em></p>
 
-
----
 
 ## 🚀 How to Run
 
